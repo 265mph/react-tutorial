@@ -20,7 +20,7 @@
 .nav-bar h4 {
   font-size: 1rem;
   font-weight: 600;
-  color: #6c78ff;
+  color: #394aff;
   cursor: pointer;
 }
 
@@ -38,11 +38,43 @@
 }
 
 .nav-bar .links li a:hover {
-  color: #6c78ff;
+  color: #394aff;
   transition: 300ms ease-in-out;
 }
 
 .content {
   margin: 1rem;
   padding: .65rem;
+}
+
+.bloglist {
+  margin-bottom: 1rem;
+  border: 1px solid #e7e7e7;
+  border-radius: .3rem;
+  padding: .85rem;
+}
+
+.bloglist .title {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  color: #394aff;
+}
+
+.blog-preview {
+  padding: 1rem;
+  margin: .7rem 0;
+}
+
+.blog-preview h4 {
+  color: #1e1e1e;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.blog-preview p {
+  color: #a1a1a1;
+  font-size: .8rem;
+  margin-bottom: .55rem;
 }

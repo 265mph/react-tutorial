@@ -8,7 +8,7 @@ const Navbar = () => {
             <h4>My Tweeter Blog</h4>
             <div className="links">
                 <li><a href="/">Home</a></li>
-                <li onClick={() => handleNewPost()}><a href="/create">New Post</a></li>
+                <li onClick={() => handleNewPost()}><a href="/create">Create New Post</a></li>
             </div>
         </nav>
     );

@@ -1,0 +1,28 @@
+{
+    "blogs": [
+        {
+            "title": "Champions League",
+            "body": "Paris Saint Germain vs Inter",
+            "author": "SuperSport",
+            "id": 1
+        },
+        {
+            "title": "Europa League",
+            "body": "Manchester United vs Tottenham Hotspur",
+            "author": "BBC",
+            "id": 2
+        },
+        {
+            "title": "Conference League",
+            "body": "Chelsea FC vs Real Betis",
+            "author": "Sky Sports",
+            "id": 3
+        },
+        {
+            "title": "Super Cup",
+            "body": "Paris Saint Germain vs Tottenham Hotspur",
+            "author": "Sky Sports",
+            "id": 4
+        }
+    ]
+}

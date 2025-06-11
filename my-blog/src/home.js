@@ -1,13 +1,33 @@
+import { useState, useEffect } from 'react'
+import  BlogList  from './bloglist'
+
 const Home = () => {
-    const handleNewPost = (e) => {
-        // alert('Create New Post')
-        console.log('ref',e)
-    }
+    const [blogs, setBlogs] = useState(null);
+    const [pending, isPending] = useState(true);
+    const [error, setError] = useState(null)
+
+    useEffect(() => {
+        fetch('http://localhost:8000/blogs')
+            .then(res => {
+                return res.json()
+            })
+            .then(data => {
+                setBlogs(data);
+                isPending(false)
+                setError(null)
+            })
+            .catch(err => {
+                setError('Error fetching data')
+                isPending(false)
+                console.log('fetch error:',err.message)
+            })
+    }, [])
 
     return ( 
         <div className="home">
-            <h2>Home Page</h2>
-            <button onClick={(e) => handleNewPost(e)}>Click Me</button>
+            { error && <div>{error}</div> }
+            { pending && <div>Loading Blogs...</div> }
+            { blogs && <BlogList blogs={blogs} title="All Channels"></BlogList> }
         </div>
     );
 }
