@@ -31,13 +31,13 @@
   margin-left: auto;
 }
 
-.nav-bar .links li a {
+.nav-bar .links a {
   font-size: .9rem;
   font-weight: 600;
   color: #1e1e1e;
 }
 
-.nav-bar .links li a:hover {
+.nav-bar .links a:hover {
   color: #394aff;
   transition: 300ms ease-in-out;
 }
@@ -77,4 +77,19 @@
   color: #a1a1a1;
   font-size: .8rem;
   margin-bottom: .55rem;
+}
+
+.blog-details .blog-title {
+  font-weight: 500;
+  color: #1e1e1e;
+  font-size: 2rem;
+}
+
+.blog-details .blog-author {
+  color: #a1a1a1;
+  font-size: .8rem;
+  font-style: italic;
+  font-family: 'Inter';
+  padding-block: .45rem;
+
 }
